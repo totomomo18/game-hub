@@ -8,8 +8,8 @@ const { toggleColorMode,colorMode } = useColorMode();
 
   return (
     <HStack>
-<Switch colorScheme='green' isChecked={colorMode === 'dark'} onChange={toggleColorMode} />
-<Text>Dark Mode</Text>
+<Switch colorScheme='green' isChecked={colorMode === 'light'} onChange={toggleColorMode} />
+<Text>{colorMode === 'light'?'VB/Eclipse Mode':'Java/Inteliij Mode'}</Text>
     </HStack>
   )
 }
